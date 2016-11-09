@@ -1,0 +1,63 @@
+/*如果在less里面出现了类名的符号
+1.正常的类名
+2.方法
+3.函数
+4.分支结构
+5.循环*/
+/*
+.radius(@r1:50%,@r2:50%,@r3:50%,@r4:50%){
+  -webkit-border-radius:@arguments;
+  -o-border-radius:@arguments;
+  -moz-border-radius:@arguments;
+  -ms-border-radius:@arguments;
+  border-radius:@arguments;
+}
+.shadow(@type) when (type=0){
+  -moz-box-shadow: 0 0 10px blue;
+  -o-box-shadow: 0 0 10px blue;
+  -webkit-box-shadow: 0 0 10px blue;
+  -ms-box-shadow: 0 0 10px blue;
+  box-shadow: 0 0 10px blue;
+}
+.shadow(@type) when (type=1){
+  -moz-box-shadow: 0 0 10px blue inset;
+  -o-box-shadow: 0 0 10px blue inset;
+  -webkit-box-shadow: 0 0 10px blue inset;
+  -ms-box-shadow: 0 0 10px blue inset;
+  box-shadow: 0 0 10px blue inset;
+}
+//循环!*
+/!*!
+.loop(@i:1) when(@i<10){
+  .col-s-@{i}{
+    width:200px*@i;
+  }
+  .loop(@i+1);
+}
+.loop;
+!**!
+.clear(){
+  &:before,&:after{
+    content:"";
+    display: block;
+  }
+  &:after{
+    clear:both;
+  }
+}
+div{
+  .clear;
+}
+  !*div{
+  width:@width;
+  height:@height;
+  border:1px solid red;
+  .radius(20%,20%,50%,50%);
+  box-shadow: 0px 0px 10px blue;
+  .shadow(0);
+}*!
+.one{
+width:200px;height:200px;border:10px solid red;
+  border-image-source:url("../b.png");!*!/边框图片路径 *! border-image-slice:33.333%;!*!/剪切图片的三分之一*!
+  border-image-repeat:round;!*!/边框的平铺*!  border-image-outset:10px;!*!/边框图像区域边框的量 *! border-image-width:10px 20px;!*!/图片边框的宽度*!
+  }*/
